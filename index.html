@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AL-MIRAGE | อาหารอาหรับตะวันออกกลางระดับพรีเมียม</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-mark">🏰</div>
+                <div class="logo-text">
+                    <span class="brand-name">AL-MIRAGE</span>
+                    <span class="brand-sub">FINE ARABIC CUISINE</span>
+                </div>
+            </a>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link active">หน้าแรก</a>
+                <a href="about.html" class="nav-link">เกี่ยวกับเรา</a>
+                <a href="menu.html" class="nav-link">เมนูอาหาร</a>
+                <a href="reservation.html" class="nav-link">จองโต๊ะ</a>
+                <a href="contact.html" class="nav-link">ติดต่อเรา</a>
+                <a href="reservation.html" class="btn btn-gold nav-btn">จองโต๊ะล่วงหน้า</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content: Home Page -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <p class="arabic-tag">أهلاً وسهلاً - ยินดีต้อนรับสู่</p>
+                <h1 class="hero-title">สัมผัสรสชาติอันทรงคุณค่าแห่งตำนานตะวันออกกลาง</h1>
+                <p class="hero-subtitle">ประสบการณ์อาหารอาหรับระดับไฟน์ไดนิ่ง รังสรรค์ด้วยเครื่องเทศชั้นเลิศและวัตถุดิบนำเข้าพรีเมียม</p>
+                <div class="hero-btns">
+                    <a href="menu.html" class="btn btn-gold"><i class="fas fa-utensils"></i> สำรวจเมนูอาหาร</a>
+                    <a href="reservation.html" class="btn btn-outline"><i class="fas fa-calendar-check"></i> สำรองโต๊ะออนไลน์</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Highlights / Features -->
+        <section class="section features">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">WHY AL-MIRAGE</span>
+                    <h2 class="section-title">มนต์เสน่ห์แห่ง อัล-มิราจ</h2>
+                    <div class="gold-divider"><span>🕌</span></div>
+                </div>
+                <div class="grid grid-3">
+                    <div class="card feature-card">
+                        <div class="feature-icon"><i class="fas fa-mortar-pestle"></i></div>
+                        <h3>เครื่องเทศแท้นำเข้า 100%</h3>
+                        <p>คัดสรร Za'atar, Sumac, Saffron และเครื่องเทศสูตรลับส่งตรงจากอาระเบียเพื่อรสชาติอันเป็นเอกลักษณ์</p>
+                    </div>
+                    <div class="card feature-card">
+                        <div class="feature-icon"><i class="fas fa-fire-alt"></i></div>
+                        <h3>ย่างถ่านสไตล์ดั้งเดิม</h3>
+                        <p>เนื้อแกะและเนื้อวัวพรีเมียมฮาลาล หมักด้วยสูตรโบราณและย่างบนเตาถ่านไม้ธรรมชาติตามแบบฉบับอาหรับ</p>
+                    </div>
+                    <div class="card feature-card">
+                        <div class="feature-icon"><i class="fas fa-crown"></i></div>
+                        <h3>บรรยากาศพระราชวังอาหรับ</h3>
+                        <p>ตกแต่งสไตล์อาระเบียนลักชัวรี พร้อมห้องส่วนตัววิพ (Majlis) เพิ่มความเอ็กซ์คลูซีฟในทุกมื้ออาหาร</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Signature Dishes Preview -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">SIGNATURE DISHES</span>
+                    <h2 class="section-title">เมนูไฮไลต์แนะนำ</h2>
+                    <div class="gold-divider"><span>✨</span></div>
+                </div>
+                <div class="grid grid-3">
+                    <div class="card menu-card">
+                        <div class="menu-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80" alt="Lamb Mandi">
+                            <span class="dish-badge">ยอดนิยม</span>
+                        </div>
+                        <div class="menu-info">
+                            <h3>Lamb Mandi (ข้าวหมกแกะมันดี)</h3>
+                            <p class="dish-desc">เนื้อแกะส่วนน่องนุ่มละลายในปาก ตุ๋นด้วยเครื่องเทศอาหรับ เสิร์ฟพร้อมข้าวบาสมาติอบเครื่องเทศอโรมาติก</p>
+                            <div class="menu-price-row">
+                                <span class="price">฿ 580</span>
+                                <a href="menu.html" class="btn btn-outline-gold btn-sm">ดูรายละเอียด</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card menu-card">
+                        <div class="menu-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=600&q=80" alt="Mixed Grill">
+                            <span class="dish-badge">เชฟแนะนำ</span>
+                        </div>
+                        <div class="menu-info">
+                            <h3>Royal Mix Grill (มิกซ์กริลล์รอยัล)</h3>
+                            <p class="dish-desc">รวมมิตรรวมปิ้งย่างอาหรับ: เคบับเนื้อ, ไก่ทิกก้า, และซี่โครงแกะย่างถ่าน เสิร์ฟพร้อมแป้งนานและซอสฮัมมุส</p>
+                            <div class="menu-price-row">
+                                <span class="price">฿ 950</span>
+                                <a href="menu.html" class="btn btn-outline-gold btn-sm">ดูรายละเอียด</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card menu-card">
+                        <div class="menu-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1579372786545-d24232daf58c?auto=format&fit=crop&w=600&q=80" alt="Hummus & Pita">
+                            <span class="dish-badge">มังสวิรัติ</span>
+                        </div>
+                        <div class="menu-info">
+                            <h3>Authentic Hummus (ฮัมมุสดั้งเดิม)</h3>
+                            <p class="dish-desc">ถั่วลูกไก่บดละเอียดผสมซอสต้าฮินี น้ำมะนาวสด และน้ำมันมะกอกเอ็กซ์ตร้าเวอร์จิน เสิร์ฟพร้อมขนมปังพีต้าอบสด</p>
+                            <div class="menu-price-row">
+                                <span class="price">฿ 220</span>
+                                <a href="menu.html" class="btn btn-outline-gold btn-sm">ดูรายละเอียด</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center" style="margin-top: 40px;">
+                    <a href="menu.html" class="btn btn-gold">ดูเมนูอาหารทั้งหมด (All Menu)</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Reservation Banner -->
+        <section class="section cta-banner">
+            <div class="container text-center">
+                <h2>เตรียมสัมผัสค่ำคืนอันแสนพิเศษกับเรา</h2>
+                <p>รองรับการจัดเลี้ยง งานเลี้ยงสังสรรค์ และห้อง VIP Majlis ส่วนตัว</p>
+                <a href="reservation.html" class="btn btn-gold btn-lg"><i class="fas fa-glass-cheers"></i> สำรองโต๊ะล่วงหน้า</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="grid grid-4">
+                <div class="footer-col">
+                    <a href="index.html" class="logo footer-logo">
+                        <div class="logo-text">
+                            <span class="brand-name">AL-MIRAGE</span>
+                            <span class="brand-sub">FINE ARABIC CUISINE</span>
+                        </div>
+                    </a>
+                    <p>ร้านอาหารอาหรับพรีเมียม นำเสนอวัฒนธรรมอาหารจากอาระเบียสู่ออเธนติกประสบการณ์ที่ไม่เหมือนใคร ฮาลาล 100%</p>
+                </div>
+                <div class="footer-col">
+                    <h4>ลิงก์ด่วน</h4>
+                    <ul>
+                        <li><a href="index.html">หน้าแรก</a></li>
+                        <li><a href="about.html">เกี่ยวกับเรา</a></li>
+                        <li><a href="menu.html">เมนูอาหาร</a></li>
+                        <li><a href="reservation.html">จองโต๊ะ</a></li>
+                        <li><a href="contact.html">ติดต่อเรา</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>เวลาทำการ</h4>
+                    <p><i class="far fa-clock"></i> จันทร์ - ศุกร์: 11:00 - 23:00 น.</p>
+                    <p><i class="far fa-clock"></i> เสาร์ - อาทิตย์: 10:30 - 23:30 น.</p>
+                    <p><span class="badge-halal"><i class="fas fa-certificate"></i> รับรองมาตรฐาน HALAL</span></p>
+                </div>
+                <div class="footer-col">
+                    <h4>ติดตามเรา</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-line"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom text-center">
+                <p>&copy; 2026 AL-MIRAGE Restaurant. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

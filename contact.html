@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ติดต่อเรา | AL-MIRAGE Restaurant</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-mark">🏰</div>
+                <div class="logo-text">
+                    <span class="brand-name">AL-MIRAGE</span>
+                    <span class="brand-sub">FINE ARABIC CUISINE</span>
+                </div>
+            </a>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">หน้าแรก</a>
+                <a href="about.html" class="nav-link">เกี่ยวกับเรา</a>
+                <a href="menu.html" class="nav-link">เมนูอาหาร</a>
+                <a href="reservation.html" class="nav-link">จองโต๊ะ</a>
+                <a href="contact.html" class="nav-link active">ติดต่อเรา</a>
+                <a href="reservation.html" class="btn btn-gold nav-btn">จองโต๊ะล่วงหน้า</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header Banner -->
+    <div class="page-header">
+        <div class="container">
+            <h1>ติดต่อเรา (Contact Us)</h1>
+            <p>สอบถามข้อมูลเพิ่มเติม การจัดเลี้ยง หรือเส้นทางการเดินทาง</p>
+        </div>
+    </div>
+
+    <main class="section">
+        <div class="container">
+            <div class="grid grid-2" style="gap: 50px;">
+                <div>
+                    <span class="section-tag">GET IN TOUCH</span>
+                    <h2 class="section-title">ช่องทางการติดต่อ</h2>
+                    <div class="gold-divider" style="margin-left: 0;"><span>📍</span></div>
+
+                    <div style="margin-bottom: 30px;">
+                        <div style="display: flex; gap: 20px; margin-bottom: 25px;">
+                            <div style="width: 50px; height: 50px; border-radius: 50%; background: rgba(212,175,55,0.1); border: 1px solid var(--gold); display: flex; align-items: center; justify-content: center; color: var(--gold); font-size: 1.2rem; flex-shrink: 0;">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 style="color: var(--gold-light); margin-bottom: 5px;">ที่อยู่ร้าน</h4>
+                                <p style="color: #ccc; line-height: 1.6;">888 ถนนสุขุมวิท แขวงคลองเตยเหนือ เขตวัฒนา กรุงเทพมหานคร 10110</p>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; gap: 20px; margin-bottom: 25px;">
+                            <div style="width: 50px; height: 50px; border-radius: 50%; background: rgba(212,175,55,0.1); border: 1px solid var(--gold); display: flex; align-items: center; justify-content: center; color: var(--gold); font-size: 1.2rem; flex-shrink: 0;">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h4 style="color: var(--gold-light); margin-bottom: 5px;">เบอร์โทรศัพท์</h4>
+                                <p style="color: #ccc; line-height: 1.6;">02-123-4567, 081-987-6543</p>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; gap: 20px; margin-bottom: 25px;">
+                            <div style="width: 50px; height: 50px; border-radius: 50%; background: rgba(212,175,55,0.1); border: 1px solid var(--gold); display: flex; align-items: center; justify-content: center; color: var(--gold); font-size: 1.2rem; flex-shrink: 0;">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 style="color: var(--gold-light); margin-bottom: 5px;">อีเมล</h4>
+                                <p style="color: #ccc; line-height: 1.6;">info@almirage-restaurant.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Map Placeholder -->
+                    <div class="card" style="padding: 20px; text-align: center; background: rgba(0,0,0,0.4);">
+                        <i class="fas fa-map-marked-alt" style="font-size: 3rem; color: var(--gold); margin-bottom: 10px;"></i>
+                        <p style="color: #ccc;">แผนที่ Google Maps (ใกล้สถานี BTS นานา / อโศก)</p>
+                        <p style="font-size: 0.85rem; color: #888; margin-top: 5px;">มีบริการที่จอดรถและ Valet Parking ฟรีสำหรับลูกค้า</p>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="card" style="padding: 35px;">
+                        <h3 style="color: var(--gold-light); margin-bottom: 20px;">ส่งข้อความถึงเรา</h3>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label class="form-label">ชื่อของคุณ *</label>
+                                <input type="text" class="form-control" required placeholder="ชื่อ-นามสกุล">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">อีเมล *</label>
+                                <input type="email" class="form-control" required placeholder="yourname@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">หัวข้อ *</label>
+                                <input type="text" class="form-control" required placeholder="เช่น สอบถามเรื่องการจัดเลี้ยง private party">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">ข้อความ *</label>
+                                <textarea class="form-control" rows="5" required placeholder="พิมพ์ข้อความของคุณที่นี่..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-gold" style="width: 100%; padding: 12px;">
+                                <i class="fas fa-paper-plane"></i> ส่งข้อความ
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal Success -->
+    <div id="modal" class="modal">
+        <div class="modal-content text-center">
+            <div style="font-size: 3.5rem; color: var(--gold); margin-bottom: 15px;">
+                <i class="fas fa-paper-plane"></i>
+            </div>
+            <h2 style="color: var(--gold); margin-bottom: 10px;">ส่งข้อความสำเร็จแล้ว!</h2>
+            <p style="color: #ddd; margin-bottom: 25px;">ขอบพระคุณสำหรับข้อความของท่าน เจ้าหน้าที่จะติดต่อกลับผ่านทางอีเมลหรือเบอร์โทรศัพท์โดยเร็วที่สุด</p>
+            <button id="closeModal" class="btn btn-gold">ตกลง</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="grid grid-4">
+                <div class="footer-col">
+                    <a href="index.html" class="logo footer-logo">
+                        <div class="logo-text">
+                            <span class="brand-name">AL-MIRAGE</span>
+                            <span class="brand-sub">FINE ARABIC CUISINE</span>
+                        </div>
+                    </a>
+                    <p>ร้านอาหารอาหรับพรีเมียม นำเสนอวัฒนธรรมอาหารจากอาระเบียสู่ออเธนติกประสบการณ์ที่ไม่เหมือนใคร ฮาลาล 100%</p>
+                </div>
+                <div class="footer-col">
+                    <h4>ลิงก์ด่วน</h4>
+                    <ul>
+                        <li><a href="index.html">หน้าแรก</a></li>
+                        <li><a href="about.html">เกี่ยวกับเรา</a></li>
+                        <li><a href="menu.html">เมนูอาหาร</a></li>
+                        <li><a href="reservation.html">จองโต๊ะ</a></li>
+                        <li><a href="contact.html">ติดต่อเรา</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>เวลาทำการ</h4>
+                    <p><i class="far fa-clock"></i> จันทร์ - ศุกร์: 11:00 - 23:00 น.</p>
+                    <p><i class="far fa-clock"></i> เสาร์ - อาทิตย์: 10:30 - 23:30 น.</p>
+                    <p><span class="badge-halal"><i class="fas fa-certificate"></i> รับรองมาตรฐาน HALAL</span></p>
+                </div>
+                <div class="footer-col">
+                    <h4>ติดตามเรา</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-line"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom text-center">
+                <p>&copy; 2026 AL-MIRAGE Restaurant. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

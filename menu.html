@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เมนูอาหาร | AL-MIRAGE Restaurant</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-mark">🏰</div>
+                <div class="logo-text">
+                    <span class="brand-name">AL-MIRAGE</span>
+                    <span class="brand-sub">FINE ARABIC CUISINE</span>
+                </div>
+            </a>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">หน้าแรก</a>
+                <a href="about.html" class="nav-link">เกี่ยวกับเรา</a>
+                <a href="menu.html" class="nav-link active">เมนูอาหาร</a>
+                <a href="reservation.html" class="nav-link">จองโต๊ะ</a>
+                <a href="contact.html" class="nav-link">ติดต่อเรา</a>
+                <a href="reservation.html" class="btn btn-gold nav-btn">จองโต๊ะล่วงหน้า</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header Banner -->
+    <div class="page-header">
+        <div class="container">
+            <h1>รายการอาหาร (Our Menu)</h1>
+            <p>ลิ้มลองเมนูต้นตำรับอาหรับแท้ คัดสรรเฉพาะวัตถุดิบเกรดพรีเมียม</p>
+        </div>
+    </div>
+
+    <main class="section">
+        <div class="container">
+            <!-- Filter Tabs -->
+            <div class="menu-tabs">
+                <button class="tab-btn active" data-category="all">ทั้งหมด (All)</button>
+                <button class="tab-btn" data-category="appetizer">ของว่าง & ฮัมมุส (Appetizers)</button>
+                <button class="tab-btn" data-category="main">จานหลัก (Main Courses)</button>
+                <button class="tab-btn" data-category="grill">ปิ้งย่างอาหรับ (Arabic Grill)</button>
+                <button class="tab-btn" data-category="dessert">ขนมหวาน & เครื่องดื่ม (Desserts & Drinks)</button>
+            </div>
+
+            <!-- Menu Grid -->
+            <div class="grid grid-3" id="menuGrid">
+                <!-- Appetizers -->
+                <div class="card menu-card" data-category="appetizer">
+                    <div class="menu-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1579372786545-d24232daf58c?auto=format&fit=crop&w=600&q=80" alt="Hummus">
+                        <span class="dish-badge">มังสวิรัติ</span>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Authentic Hummus</h3>
+                        <p class="dish-desc">ถั่วลูกไก่บดละเอียดผสมซอสต้าฮินี น้ำมะนาวสด และน้ำมันมะกอกเอ็กซ์ตร้าเวอร์จิน</p>
+                        <div class="menu-price-row">
+                            <span class="price">฿ 220</span>
+                            <button class="btn btn-gold btn-sm order-btn" data-dish="Authentic Hummus">สั่งเมนูนี้</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card menu-card" data-category="appetizer">
+                    <div class="menu-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&w=600&q=80" alt="Falafel">
+                        <span class="dish-badge">มังสวิรัติ</span>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Crispy Falafel (ฟาลาเฟล)</h3>
+                        <p class="dish-desc">ถั่วลูกไก่ผสมเครื่องเทศและสมุนไพรทอดกรอบนอกนุ่มใน เสิร์ฟพร้อมซอสต้าฮินีฉ่ำๆ</p>
+                        <div class="menu-price-row">
+                            <span class="price">฿ 250</span>
+                            <button class="btn btn-gold btn-sm order-btn" data-dish="Crispy Falafel">สั่งเมนูนี้</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card menu-card" data-category="appetizer">
+                    <div class="menu-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80" alt="Tabbouleh">
+                    </div>
+                    <div class="menu-info">
+                        <h3>Tabbouleh Salad (สลัดทาบัวเลห์)</h3>
+                        <p class="dish-desc">สลัดพาร์สลีย์สับละเอียด ผสมมะเขือเทศ หอมใหญ่ ข้าวสาลีบูลเกอร์ น้ำมะนาวสด และน้ำมันมะกอก</p>
+                        <div class="menu-price-row">
+                            <span class="price">฿ 240</span>
+                            <button class="btn btn-gold btn-sm order-btn" data-dish="Tabbouleh Salad">สั่งเมนูนี้</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Courses -->
+                <div class="card menu-card" data-category="main">
+                    <div class="menu-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80" alt="Lamb Mandi">
+                        <span class="dish-badge">แนะนำ</span>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Lamb Mandi (ข้าวหมกแกะมันดี)</h3>
+                        <p class="dish-desc">เนื้อแกะส่วนน่องนุ่มละลายในปาก ตุ๋นด้วยเครื่องเทศอาหรับ เสิร์ฟพร้อมข้าวบาสมาติอบเครื่องเทศ</p>
+                        <div class="menu-price-row">
+                            <span class="price">฿ 580</span>
+                            <button class="btn btn-gold btn-sm order-btn" data-dish="Lamb Mandi">สั่งเมนูนี้</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card menu-card" data-category="main">
+                    <div class="menu-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=600&q=80" alt="Chicken Kabsa">
+                    </div>
+                    <div class="menu-info">
+                        <h3>Chicken Kabsa (ข้าวหมกไก่กับซ่า)</h3>
+                        <p class="dish-desc">ข้าวหมกสไตล์ซาอุดีอาระเบีย อบพร้อมน่องไก่ชิ้นโต รสชาติกลมกล่อม หอมกลิ่นหญ้าฝรั่นและถั่วอัลมอนด์</p>
+                        <div class="menu-price-row">
+                            <span class="price">฿ 380</span>
+                            <button class="btn btn-gold btn-sm order-btn" data-dish="Chicken Kabsa">สั่งเมนูนี้</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Grill -->
+                <div class="card menu-card" data-category="grill">
+                    <div class="menu-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=600&q=80" alt="Mixed Grill">
+                        <span class="dish-badge">เชฟแนะนำ</span>
+                    </div>
+                    <div class="menu-info">
+                        <h3>Royal Mix Grill</h3>
+                        <p class="dish-desc">รวมมิตรรวมปิ้งย่างอาหรับ: เคบับเนื้อ, ไก่ทิกก้า, และซี่โครงแกะย่างถ่าน เสิร์ฟพร้อมแป้งนาน</p>
+                        <div class="menu-price-row">
+                            <span class="price">฿ 950</span>
+                            <button class="btn btn-gold btn-sm order-btn" data-dish="Royal Mix Grill">สั่งเมนูนี้</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card menu-card" data-category="grill">
+                    <div class="menu-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=600&q=80" alt="Shish Kebab">
+                    </div>
+                    <div class="menu-info">
+                        <h3>Lamb Shish Kebab</h3>
+                        <p class="dish-desc">เนื้อแกะบดผสมเครื่องเทศอาหรับเสียบไม้ย่างถ่าน หอมกลิ่นควันไม้ เสิร์ฟพร้อมผักย่าง</p>
+                        <div class="menu-price-row">
+                            <span class="price">฿ 450</span>
+                            <button class="btn btn-gold btn-sm order-btn" data-dish="Lamb Shish Kebab">สั่งเมนูนี้</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desserts & Drinks -->
+                <div class="card menu-card" data-category="dessert">
+                    <div class="menu-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1519676867240-f03562e64548?auto=format&fit=crop&w=600&q=80" alt="Baklava">
+                    </div>
+                    <div class="menu-info">
+                        <h3>Pistachio Baklava (พายบาคลาวา)</h3>
+                        <p class="dish-desc">พายพัฟชั้นบางกรอบสอดไส้ถั่วพิสตาชิโอ บดละเอียด ราดด้วยน้ำเชื่อมดอกส้มหวานหอม</p>
+                        <div class="menu-price-row">
+                            <span class="price">฿ 220</span>
+                            <button class="btn btn-gold btn-sm order-btn" data-dish="Pistachio Baklava">สั่งเมนูนี้</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card menu-card" data-category="dessert">
+                    <div class="menu-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=600&q=80" alt="Arabic Tea">
+                    </div>
+                    <div class="menu-info">
+                        <h3>Arabic Mint Tea & Coffee</h3>
+                        <p class="dish-desc">ชาร้อนผสมใบสะระแหน่สด หรือ กาแฟอาหรับ (Gahwa) ผสมกระวาน หอมละมุนสไตล์ดั้งเดิม</p>
+                        <div class="menu-price-row">
+                            <span class="price">฿ 160</span>
+                            <button class="btn btn-gold btn-sm order-btn" data-dish="Arabic Mint Tea">สั่งเมนูนี้</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="grid grid-4">
+                <div class="footer-col">
+                    <a href="index.html" class="logo footer-logo">
+                        <div class="logo-text">
+                            <span class="brand-name">AL-MIRAGE</span>
+                            <span class="brand-sub">FINE ARABIC CUISINE</span>
+                        </div>
+                    </a>
+                    <p>ร้านอาหารอาหรับพรีเมียม นำเสนอวัฒนธรรมอาหารจากอาระเบียสู่ออเธนติกประสบการณ์ที่ไม่เหมือนใคร ฮาลาล 100%</p>
+                </div>
+                <div class="footer-col">
+                    <h4>ลิงก์ด่วน</h4>
+                    <ul>
+                        <li><a href="index.html">หน้าแรก</a></li>
+                        <li><a href="about.html">เกี่ยวกับเรา</a></li>
+                        <li><a href="menu.html">เมนูอาหาร</a></li>
+                        <li><a href="reservation.html">จองโต๊ะ</a></li>
+                        <li><a href="contact.html">ติดต่อเรา</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>เวลาทำการ</h4>
+                    <p><i class="far fa-clock"></i> จันทร์ - ศุกร์: 11:00 - 23:00 น.</p>
+                    <p><i class="far fa-clock"></i> เสาร์ - อาทิตย์: 10:30 - 23:30 น.</p>
+                    <p><span class="badge-halal"><i class="fas fa-certificate"></i> รับรองมาตรฐาน HALAL</span></p>
+                </div>
+                <div class="footer-col">
+                    <h4>ติดตามเรา</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-line"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom text-center">
+                <p>&copy; 2026 AL-MIRAGE Restaurant. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Notification Toast -->
+    <div id="toast" class="toast">เพิ่มรายการลงในตะกร้าเรียบร้อยแล้ว</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
